@@ -2,11 +2,11 @@
 
 import { useState } from 'react';
 import { useTheme } from 'next-themes';
-import { Moon, Sun, Wallet, ArrowLeft, Loader2, Search } from 'lucide-react';
+import { Moon, Sun, ArrowLeft, Loader2, Search } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import '@rainbow-me/rainbowkit/styles.css';
 import { getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit';
-import { http, useAccount, WagmiProvider } from 'wagmi';
+import { http, WagmiProvider } from 'wagmi';
 import { base, baseSepolia, localhost, mainnet, sepolia } from 'wagmi/chains';
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import { ConnectButton } from '@rainbow-me/rainbowkit';
